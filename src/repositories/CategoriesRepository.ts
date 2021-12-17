@@ -1,6 +1,6 @@
-import { Category } from '../model/Category'
+import { Category } from "../model/Category";
 
-//DTO => Data transfer object. Utilizado para pegar os valores da rota e enviar para os repositórios
+// DTO => Data transfer object. Utilizado para pegar os valores da rota e enviar para os repositórios
 interface ICreateCategoryDTO {
   name: string;
   description: string;
@@ -9,13 +9,13 @@ interface ICreateCategoryDTO {
 class CategoriesRepository {
   private categories: Category[];
 
-  constructor(){
+  constructor() {
     this.categories = [];
   }
 
-  create({ description, name}: ICreateCategoryDTO): void {
+  create({ description, name }: ICreateCategoryDTO): void {
     const category = new Category();
-  
+
     Object.assign(category, {
       name,
       description,
@@ -26,4 +26,4 @@ class CategoriesRepository {
   }
 }
 
-export { CategoriesRepository }
+export { CategoriesRepository };
