@@ -1,10 +1,5 @@
 import { Category } from "../model/Category";
-
-// DTO => Data transfer object. Utilizado para pegar os valores da rota e enviar para os repositórios
-interface ICreateCategoryDTO {
-  name: string;
-  description: string;
-}
+import { ICreateCategoryDTO } from "./ICategoriesRepository";
 
 class CategoriesRepository {
   private categories: Category[];
