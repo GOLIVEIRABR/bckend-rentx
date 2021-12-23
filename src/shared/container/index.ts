@@ -4,4 +4,7 @@ import { ICategoriesRespository } from "../../modules/cars/repositories/ICategor
 import { CategoriesRepository } from "../../modules/cars/repositories/implementations/CategoriesRepository";
 
 // ICategoriesRepository
-container.registerSingleton<ICategoriesRespository>("", CategoriesRepository);
+container.registerSingleton<ICategoriesRespository>(
+  "CategoriesRepository",
+  CategoriesRepository
+);
