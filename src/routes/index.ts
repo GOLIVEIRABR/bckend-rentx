@@ -13,3 +13,5 @@ router.use("/users", usersRoutes);
 router.use(authenticateRoutes);
 
 export { router };
+
+// comentário pra merge
