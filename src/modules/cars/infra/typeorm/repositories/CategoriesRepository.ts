@@ -2,11 +2,11 @@ import { getRepository, Repository } from "typeorm";
 
 import { Category } from "@modules/cars/infra/typeorm/entities/Category";
 import {
-  ICategoriesRespository,
+  ICategoriesRepository,
   ICreateCategoryDTO,
 } from "@modules/cars/repositories/ICategoriesRepository";
 
-class CategoriesRepository implements ICategoriesRespository {
+class CategoriesRepository implements ICategoriesRepository {
   private repository: Repository<Category>;
 
   // eslint-disable-next-line no-use-before-define
