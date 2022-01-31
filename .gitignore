@@ -105,3 +105,12 @@ dist
 
 # TempFiles
 tmp/*
+
+# VSCODE
+.vscode
+
+# Inclusão da pasta tmp
+!tmp/.gitkeep
+
+# ORMCONFIG
+ormconfig.json
