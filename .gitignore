@@ -114,3 +114,6 @@ tmp/*
 
 # ORMCONFIG
 ormconfig.json
+
+# docker-compose
+docker-compose.yml
